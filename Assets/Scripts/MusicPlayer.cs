@@ -25,7 +25,7 @@ public class MusicPlayer : MonoBehaviour
 
         if (thisLevelsMusic)
         {
-            //audioSource.clip = thisLevelsMusic;
+            audioSource.clip = thisLevelsMusic;
             audioSource.loop = true;
             audioSource.Play();
         }
