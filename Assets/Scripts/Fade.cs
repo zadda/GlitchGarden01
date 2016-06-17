@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class Fade : MonoBehaviour
 {
+    
 
 	// Use this for initialization
 	void Start ()
