@@ -7,6 +7,7 @@ public class OptionsController : MonoBehaviour
     public Slider sliderVolume;
     public Slider sliderDifficulty;
     public Text textDifficulty;
+    public Text textMusicLevel;
     public LevelManager levelManager;
 
     private MusicPlayer musicManager;
@@ -14,13 +15,15 @@ public class OptionsController : MonoBehaviour
     void Start ()
     {
         musicManager = GameObject.FindObjectOfType<MusicPlayer>();
-
+        PrintDifficultyLevel();
+        sliderVolume.value = PlayerPrefsManager.GetMasterVolume();
+        sliderDifficulty.value = PlayerPrefsManager.GetDifficulty();
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-	
+        musicManager.ChangeVolume(sliderVolume.value);
 	}
 
     public void SaveAndExit()
@@ -32,7 +35,7 @@ public class OptionsController : MonoBehaviour
 
     public void PrintDifficultyLevel()
     {
-        string graad = "easy";
+        string graad = "";
 
         if (sliderDifficulty.value == 1)
         {
@@ -47,7 +50,17 @@ public class OptionsController : MonoBehaviour
             graad = "hard";
         }
 
-        textDifficulty.text = graad;
-        
+        textDifficulty.text = graad; // easy, medium of hard
     }
+
+    public void PrintMusicLevel()
+    {
+        float musicLevel = 0;
+
+        musicLevel = sliderVolume.value * 100;
+
+        textMusicLevel.text = musicLevel.ToString("00.0") + "%";
+
+    }
+
 }
