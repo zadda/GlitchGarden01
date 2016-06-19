@@ -23,7 +23,10 @@ public class OptionsController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        musicManager.ChangeVolume(sliderVolume.value);
+        if (musicManager)
+        {
+            musicManager.ChangeVolume(sliderVolume.value);
+        }
 	}
 
     public void SaveAndExit()
@@ -31,6 +34,12 @@ public class OptionsController : MonoBehaviour
         PlayerPrefsManager.SetMasterVolume(sliderVolume.value);
         PlayerPrefsManager.SetDifficulty(sliderDifficulty.value);
         levelManager.LoadLevel("00Start Menu");
+    }
+
+    public void SetDefaults()
+    {
+        sliderDifficulty.value = 1f;
+        sliderVolume.value = 0.20f;
     }
 
     public void PrintDifficultyLevel()
