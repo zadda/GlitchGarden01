@@ -32,8 +32,8 @@ $RECYCLE.BIN/
 ._*
 
 # User Defined
-Library
-ProjectSettings
+/Library/
+/ProjectSettings
 Assets/images
 Assets/Prefabs
 Assets/Animations

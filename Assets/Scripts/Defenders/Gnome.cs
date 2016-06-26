@@ -13,6 +13,7 @@ public class Gnome : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         defender = GetComponent<Defender>();
+        anim.SetBool("isDefending", true);
     }
 
     // Update is called once per frame

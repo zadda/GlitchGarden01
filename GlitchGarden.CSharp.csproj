@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\Attackers\Attacker.cs" />
     <Compile Include="Assets\Scripts\Attackers\Fox.cs" />
     <Compile Include="Assets\Scripts\Attackers\Lizard.cs" />
+    <Compile Include="Assets\Scripts\Button.cs" />
+    <Compile Include="Assets\Scripts\DefenderSpawner.cs" />
     <Compile Include="Assets\Scripts\Defenders\Cactus.cs" />
     <Compile Include="Assets\Scripts\Defenders\Defender.cs" />
     <Compile Include="Assets\Scripts\Defenders\Gnome.cs" />
@@ -82,7 +84,7 @@
     <Compile Include="Assets\Scripts\ScoreDisplay.cs" />
     <Compile Include="Assets\Scripts\ScoreKeeping.cs" />
     <Compile Include="Assets\Scripts\SetStartVolume.cs" />
-    <Compile Include="Assets\Shredder.cs" />
+    <Compile Include="Assets\Scripts\Shredder.cs" />
     <Compile Include="Assets\TEST.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

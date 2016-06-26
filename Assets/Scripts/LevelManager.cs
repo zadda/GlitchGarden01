@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
     {
         if (autoLoadNextLevelAfter <= 0)
         {
-            Debug.Log("value must be positive");
+            //Debug.Log("value must be positive");
         }
         else
         {

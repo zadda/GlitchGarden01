@@ -13,6 +13,7 @@ public class Star : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         defender = GetComponent<Defender>();
+        anim.SetBool("isDefending", true);
     }
 
     // Update is called once per frame
