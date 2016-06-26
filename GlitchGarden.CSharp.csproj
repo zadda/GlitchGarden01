@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\ScoreKeeping.cs" />
     <Compile Include="Assets\Scripts\SetStartVolume.cs" />
     <Compile Include="Assets\Scripts\Shredder.cs" />
+    <Compile Include="Assets\Scripts\Spawn.cs" />
     <Compile Include="Assets\TEST.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
