@@ -13,14 +13,9 @@ public class Stone : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         defender = GetComponent<Defender>();
-        anim.SetBool("isDefending", true);
+     
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -32,7 +27,7 @@ public class Stone : MonoBehaviour
         }
         //botsen met andere aanvaller -> DEFEND
        
-            anim.SetBool("isDefending", true);
-            defender.Defend(objectCollidedwith);
+            //anim.SetBool("isDefending", true);
+           // defender.Defend(objectCollidedwith);
     }
 }

@@ -13,7 +13,7 @@ public class Cactus : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         defender = GetComponent<Defender>();
-        anim.SetBool("isDefending", true);
+        //anim.SetBool("isDefending", true);
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class Cactus : MonoBehaviour
         }
         //botsen met andere aanvaller -> DEFEND
        
-            anim.SetBool("isDefending", true);
-            defender.Defend(objectCollidedwith);
+            //anim.SetBool("isDefending", true);
+            //defender.Defend(objectCollidedwith);
     }
 }

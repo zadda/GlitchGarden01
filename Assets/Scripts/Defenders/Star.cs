@@ -5,15 +5,15 @@ using System.Collections;
 
 public class Star : MonoBehaviour 
 {
-    private Animator anim;
+    //private Animator anim;
     private Defender defender;
 
     // Use this for initialization
     void Start()
     {
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
         defender = GetComponent<Defender>();
-        anim.SetBool("isDefending", true);
+        //anim.SetBool("isDefending", true);
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class Star : MonoBehaviour
         }
         //botsen met andere aanvaller -> DEFEND
        
-            anim.SetBool("isDefending", true);
-            defender.Defend(objectCollidedwith);
+//            anim.SetBool("isDefending", true);
+            //defender.Defend(objectCollidedwith);
     }
 }

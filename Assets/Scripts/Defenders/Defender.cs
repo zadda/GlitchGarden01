@@ -1,32 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Defender : MonoBehaviour 
 {
     [Range (-1f,1.5f)]
     private float walkSpeed;
     private GameObject currentTarget;
-    private Animator animator;
+
+    private StarScoreDisplay starDisplay;
+    public int starCost = 100;
+
+    //private Animator animator;
 
     // Use this for initialization
     void Start () 
 	{
-        animator = GetComponent<Animator>();
+        starDisplay = GameObject.FindObjectOfType<StarScoreDisplay>();
+       
+        // animator = GetComponent<Animator>();
     }
 	
-	// Update is called once per frame
-	void Update () 
-	{
-        if (!currentTarget)
-        {
-            //animator.SetBool("isDefending", false);
-        }
-    }
-
-    void OnTriggerEnter2D()
-    {
-       
-    }
 
     public void StrikeCurrentAttacker(float damage)
     {
@@ -40,8 +34,14 @@ public class Defender : MonoBehaviour
         }
     }
 
-    public void Defend(GameObject obj)
+    public void AddStars(int amount)
     {
-        currentTarget = obj;
+        starDisplay.AddStars(amount);
+        //myText.text = score.ToString();
     }
+
+    //public void Defend(GameObject obj)
+    //{
+    //    currentTarget = obj;
+    //}
 }

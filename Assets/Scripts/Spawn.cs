@@ -32,7 +32,9 @@ public class Spawn : MonoBehaviour
         {
             Debug.LogWarning("Spwan rate capped by frame rate");
         }
-        float treshold = spawnsPerSecond * Time.deltaTime;// /5;
+        float treshold = spawnsPerSecond * Time.deltaTime/2;
+
+        //return (Random.value < treshold);
 
         if (Random.value < treshold)
         {
@@ -42,13 +44,13 @@ public class Spawn : MonoBehaviour
         {
             return false;
         }
-        
+
     }
 
     void SpawnEnemy(GameObject myGameObject)
     {
         GameObject myAttacker = Instantiate(myGameObject) as GameObject;
-        myAttacker.transform.parent = this.transform;
-        myAttacker.transform.position = this.transform.position;
+        myAttacker.transform.parent = transform;
+        myAttacker.transform.position = transform.position;
     }
 }
