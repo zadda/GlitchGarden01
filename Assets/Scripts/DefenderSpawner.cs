@@ -31,7 +31,7 @@ public class DefenderSpawner : MonoBehaviour
         }
         else
         {
-            Debug.Log("not enough money!");
+            //Debug.Log("not enough money!");
         }
     }
 

@@ -5,14 +5,14 @@ using System.Collections;
 
 public class Gnome : MonoBehaviour 
 {
-    private Animator anim;
-    private Defender defender;
+    //private Animator anim;
+    //private Defender defender;
 
     // Use this for initialization
     void Start()
     {
-        anim = GetComponent<Animator>();
-        defender = GetComponent<Defender>();
+        //anim = GetComponent<Animator>();
+        //defender = GetComponent<Defender>();
         //anim.SetBool("isDefending", true);
     }
 

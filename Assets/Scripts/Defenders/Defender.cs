@@ -6,7 +6,7 @@ public class Defender : MonoBehaviour
 {
     [Range (-1f,1.5f)]
     private float walkSpeed;
-    private GameObject currentTarget;
+   // private GameObject currentTarget;
 
     private StarScoreDisplay starDisplay;
     public int starCost = 100;
@@ -22,17 +22,17 @@ public class Defender : MonoBehaviour
     }
 	
 
-    public void StrikeCurrentAttacker(float damage)
-    {
-        if (currentTarget) // er is alleen een currentTarget bij attack mode
-        {
-            Health health = currentTarget.GetComponent<Health>();
-            if (health) // heeft het currenttarget wel een Health waarde
-            {
-                health.DealDamage(damage);
-            }
-        }
-    }
+    //public void StrikeCurrentAttacker(float damage)
+    //{
+    //    if (currentTarget) // er is alleen een currentTarget bij attack mode
+    //    {
+    //        Health health = currentTarget.GetComponent<Health>();
+    //        if (health) // heeft het currenttarget wel een Health waarde
+    //        {
+    //            health.DealDamage(damage);
+    //        }
+    //    }
+    //}
 
     public void AddStars(int amount)
     {

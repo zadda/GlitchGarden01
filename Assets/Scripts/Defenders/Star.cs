@@ -6,13 +6,13 @@ using System.Collections;
 public class Star : MonoBehaviour 
 {
     //private Animator anim;
-    private Defender defender;
+    //private Defender defender;
 
     // Use this for initialization
     void Start()
     {
         //anim = GetComponent<Animator>();
-        defender = GetComponent<Defender>();
+        //defender = GetComponent<Defender>();
         //anim.SetBool("isDefending", true);
     }
 

@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 96f6f7c290e58f04c9b639db95278049
-timeCreated: 1467536822
+guid: 725537dd631943d46b4d3ca7377ef0d8
+timeCreated: 1467534710
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences:
-  - myCamera: {fileID: 2089260, guid: b089d3892f1a55742a8ddc75fbf30495, type: 2}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

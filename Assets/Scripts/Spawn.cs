@@ -36,14 +36,15 @@ public class Spawn : MonoBehaviour
 
         //return (Random.value < treshold);
 
-        if (Random.value < treshold)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return (Random.value < treshold); // returns true or false
+        //
+        //{
+        //    return true;
+        //}
+        //else
+        //{
+        //    return false;
+        //}
 
     }
 
